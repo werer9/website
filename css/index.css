@@ -1,0 +1,170 @@
+body {
+	margin: 0px;
+	padding: 0px;
+}
+
+.hidden {
+	display: none;
+}
+
+#upper-page-wrapper {
+	display: block;
+}
+
+nav {
+	z-index: 2;
+	position: fixed;
+	background: #67b7f5;
+	width: 100%;
+	height: 80px;
+	top: 0;
+	text-align: center;
+	display: inline-block;
+	font-family: 'Raleway', sans-serif;
+	font-size: 25px;
+}
+
+nav ul {
+	padding: 0 1em;
+	list-style: none;
+	position: relative;
+	display: inline-block;
+}
+
+nav ul:after {
+	content: "";
+	clear: both;
+	display: block;
+}
+
+nav ul li {
+	position: relative;
+	float: left;
+	height: 80px;
+	top: -25px;
+	padding-left: 40px;
+	padding-right: 40px;
+	line-height: 80px;
+	transition: background 0.2s, color 0.2s;
+	-webkit-transition: background 0.2s, color 0.2s;
+	-moz-transition: background 0.2s, color 0.2s;
+	-o-transition: background 0.2s, color 0.2s;
+}
+
+nav ul li a {
+	display: inline-block;
+	text-decoration: none;
+	color: inherit;
+	top: 10px;
+}
+
+nav ul li:hover {
+	background: #06657d;
+	color: white;
+}
+
+nav ul li:hover > ul {
+	display: block;
+}
+
+nav ul ul {
+	display: none;
+	padding: 0;
+	position: absolute;
+	color: white;
+	top: 100%;
+	float: none;
+	line-height: normal;
+}
+
+nav ul ul li {
+	background: #06657d;
+	width: 200px;
+	top: 100%;
+	/*064e7d*/
+	float: none;
+	position: relative;
+	display: table-cell;
+	vertical-align: middle;
+	line-height: normal;
+}
+
+nav ul ul li a {
+	padding: 0.5em 0.25em;
+}
+
+nav ul ul li:hover {
+	background: #064e7d;
+}
+
+#logo {
+	cursor: pointer;
+	width: 2.5em;
+	height: 2.5em;
+	margin-bottom: 2.25em;
+	-webkit-transition: -webkit-filter 0.2s;
+	-moz-transition: -moz-filter 0.2s;
+	-o-transition: -o-filter 0.2s;
+	/*transition: filter 1s;*/
+}
+
+#logo:hover {
+	-webkit-filter: opacity(80%);
+	-moz-filter: opacity(80%);
+	-o-filter: opacity(80%);
+	/*filter: opacity(80%);*/
+}
+
+#werer9-png {
+	position: absolute;
+	top: 0;
+	display: block;
+	height: 100vh;
+	width: 100%;
+	overflow: hidden;
+	text-align: center;
+}
+
+#cover {
+	z-index: -1;
+	width: 100%;
+	margin-top: 3.5em;
+	position: relative;
+}
+
+#img-overlay {
+	z-index: 1;
+	display: block;
+	position: relative;
+	top: 125px;
+	text-align: center;
+}
+
+#werer9 {
+	font-family: 'Oswald', Sans;
+	text-decoration: underline;
+	font-size: 5em;
+	letter-spacing: 2px;
+}
+
+#more {
+	cursor: pointer;
+	font-family: 'Oswald', sans-serif;
+	font-size: 2em;
+	border: 2px solid black;
+	border-radius: 5px;
+	width: 6em;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 100px;
+	transition: color 0.3s, border 0.3s;
+	-webkit-transition: color 0.3s, border 0.3s;
+	-moz-transition: color 0.3s, border 0.3s;
+	-o-transition: color 0.3s, border 0.3s;
+}
+
+#more:hover {
+	color: #ad1f1f;
+	border: 2px solid #ad1f1f;
+}

@@ -1,0 +1,226 @@
+@charset 'UTF-8';
+
+	@font-face {
+		font-family: 'MankSans';
+		src: url('fonts/MankSans.ttf');
+	}
+
+	body {
+		margin: 0;
+		padding: 0;
+		background: #777777;
+        font-family: 'Roboto', sans-serif;
+        z-index: -1;
+	}
+
+	nav {
+		z-index: 4;
+		position: fixed;
+		width: 100%;
+		height: 6em;
+		text-align: center;
+		font-family: 'Raleway', sans-serif;
+		font-size: 1em;
+		background: #525252;
+		box-shadow: 0em 0em 1em 0.25em rgba(30,30,30,1);
+	}
+
+	nav ul {
+		background: #525252;
+		color: white;
+		list-style: none;
+		padding: 0 2em;
+		position: relative;
+		display: inline-table;
+	}
+
+	nav ul:after {
+		content: "";
+		clear: both;
+		display: block;
+	}
+
+	nav ul li {
+		float: left;
+		margin-top: -1.2em;
+	}
+
+	nav ul li {
+		transition: background 0.2s;
+		-moz-transition: background 0.2s;
+		-o-transition: background 0.2s;
+		-webkit-transition: background 0.2s;
+	}
+
+	nav ul li:hover {
+		background: black;
+	}
+
+	nav ul li a {
+		display: block;
+		padding: 0.45em 1em;
+		font-size: 3em;
+		text-decoration: none;
+		color: white;
+	}
+
+	#nav-wrapper {
+		z-index: 1;
+	}
+
+	#welcome {
+		text-align: center;
+	}
+
+	#welcome h1 {
+		color: #626262;
+		margin-top: 2.25em;
+		font-size: 4em;
+		position: relative;
+		margin-left: auto;
+		margin-right: auto;
+		display: inline-block;
+		max-width: 10em;
+		font-family: 'Oswald', sans-serif;
+	}
+
+	#welcome h1::after {
+		content: " ";
+		border: solid 2px #ff6f00;
+		display: block;
+		width: 20%;
+		margin: 20px auto;
+	}
+
+	#contactLink {
+		text-decoration: none;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	#contactButton {
+		border: 2px solid #ff6f00;
+		font-family: 'Oswald', sans-serif;
+		width: 7em;
+		height: 1.5em;
+		font-size: 2em;
+		padding: 0.2em;
+		display: block;
+		text-align: center;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 1em;
+		border-radius: 10px;
+		color: #ff6f00;
+		background: #595959;
+		transition: border 0.2s, color 0.2s;
+		-moz-transition: border 0.2s, color 0.2s;
+		-o-transition: border 0.2s, color 0.2s;
+		-webkit-transition: border 0.2s, color 0.2s;
+	}
+
+	#contactButton:hover {
+		border: 2px solid #0099ff;
+		color: #0099ff;
+	}
+
+	#image {
+		position: fixed;
+		z-index: -1;
+		margin-top: -1em;
+		width: 100%;
+	}
+
+	img {
+		position: absolute;
+		z-index: -1;
+		width: 100%;
+	}
+
+	#about {
+		background-color: #292929;
+		margin-top: 15em;
+		color: white;
+		padding: 1em;
+		box-shadow: 0em 0em 1em 0.25em rgba(30,30,30,1);
+		position: relative;
+		z-index: 3;
+	}
+
+	#about h1 {
+		text-align: center;
+		font-family: 'Oswald', sans-serif;
+		text-decoration: underline;
+	}
+
+	#about p {
+		margin-left: 40%;
+		font-size: 1.1em;
+		font-family: 'MankSans', sans-serif;
+		padding: 1em;
+	}
+
+	#gallery {
+		background-color: #fafafa;
+		height: 35em;
+		margin-top: 0em;
+		text-align: center;
+		position: relative;
+		z-index: 2;
+	}
+
+	#gallery h1 {
+		display: inline-block;
+		font-family: 'Oswald', sans-serif;
+		text-decoration: underline;
+		color: black;
+		position: relative;
+		margin-top: 0.5em;
+	}
+
+	#contact {
+		position: relative;
+		width: 100%; 
+		height: 20em;
+		background: #009de6;
+		z-index: 2;
+		vertical-align: middle;
+		text-align: center;
+		display: inline-block;
+		box-shadow: 0em 0.6em 2em 0.75em rgba(20,20,20,1);
+	}
+
+	#contact h1 {
+		display: inline-block;
+		font-family: 'Oswald', sans-serif;
+		text-decoration: underline;
+		color: black;
+		position: relative;
+		top: 0.5em;
+		display: block;
+	}
+
+	#contact-buttons {
+		display: inline;
+		text-align: center;
+	}
+
+	#contact-buttons img {
+		padding: 1em;
+	}
+
+	#fbimg {
+		width: 5em;
+		height: 5em;
+		position: relative;
+		z-index: 3;
+		top: 4em;
+	}
+
+	#twitterimg {
+		width: 5em;
+		height: 5em;
+		position: relative;
+		z-index: 3;
+		top: 4em;
+	}
