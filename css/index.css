@@ -38,6 +38,7 @@ nav ul:after {
 }
 
 nav ul li {
+	cursor: pointer;
 	position: relative;
 	float: left;
 	height: 80px;
@@ -82,11 +83,9 @@ nav ul ul li {
 	width: 200px;
 	top: 100%;
 	/*064e7d*/
+	line-height: 50px;
 	float: none;
 	position: relative;
-	display: table-cell;
-	vertical-align: middle;
-	line-height: normal;
 }
 
 nav ul ul li a {
