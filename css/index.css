@@ -1,3 +1,5 @@
+@charset 'UTF-8';
+
 body {
 	margin: 0px;
 	padding: 0px;
@@ -5,6 +7,10 @@ body {
 
 .hidden {
 	display: none;
+}
+
+.link {
+	text-decoration: none;
 }
 
 #upper-page-wrapper {
@@ -22,6 +28,7 @@ nav {
 	display: inline-block;
 	font-family: 'Raleway', sans-serif;
 	font-size: 25px;
+	box-shadow: 0px 0px 12px 2px #222222;
 }
 
 nav ul {
@@ -38,6 +45,7 @@ nav ul:after {
 }
 
 nav ul li {
+	color: black;
 	cursor: pointer;
 	position: relative;
 	float: left;
@@ -80,6 +88,7 @@ nav ul ul {
 
 nav ul ul li {
 	background: #06657d;
+	color: white;
 	width: 200px;
 	top: 100%;
 	/*064e7d*/
@@ -114,8 +123,12 @@ nav ul ul li:hover {
 	/*filter: opacity(80%);*/
 }
 
+#lower-page-wrapper {
+	display: block;
+}
+
 #werer9-png {
-	position: absolute;
+	position: fixed;
 	top: 0;
 	display: block;
 	height: 100vh;
@@ -129,14 +142,17 @@ nav ul ul li:hover {
 	width: 100%;
 	margin-top: 3.5em;
 	position: relative;
+	clear: both;
 }
 
 #img-overlay {
-	z-index: 1;
+	z-index: 0;
+	width: 100%;
 	display: block;
-	position: relative;
+	position: absolute;
 	top: 125px;
 	text-align: center;
+	margin: 0 auto;
 }
 
 #werer9 {
@@ -147,6 +163,8 @@ nav ul ul li:hover {
 }
 
 #more {
+	text-decoration: none;
+	color: black;
 	cursor: pointer;
 	font-family: 'Oswald', sans-serif;
 	font-size: 2em;
@@ -154,8 +172,7 @@ nav ul ul li:hover {
 	border-radius: 5px;
 	width: 6em;
 	text-align: center;
-	margin-left: auto;
-	margin-right: auto;
+	margin: 0 auto;
 	margin-top: 100px;
 	transition: color 0.3s, border 0.3s;
 	-webkit-transition: color 0.3s, border 0.3s;
@@ -166,4 +183,24 @@ nav ul ul li:hover {
 #more:hover {
 	color: #ad1f1f;
 	border: 2px solid #ad1f1f;
+}
+
+#about {
+	width: 100%;
+	height: 80vh;
+	z-index: 1;
+	background: white;
+	position: relative;
+	bottom: 0;
+	top: 100vh;
+	box-shadow: 0px 0px 12px 2px #222222;
+}
+
+#contact {
+	z-index: 0;
+	background: #424242;
+	width: 100%;
+	height: 30vh;
+	top: 100vh;
+	position: relative;
 }
