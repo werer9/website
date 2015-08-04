@@ -1,6 +1,5 @@
 $(document).ready(function() {
 	$('a[href^="#"]').on('click', function(event) {
-
 	    var target = $($(this).attr('href'));
 
     	if(target.length) {
@@ -10,4 +9,12 @@ $(document).ready(function() {
         	}, 500);
    		}
 	});
+    
+//    $('li.navitem').mouseenter(function() {
+//        $(this).addClass('active');
+//    });
+//    
+//    $('li.navitem').mouseleave(function() {
+//        $(this).removeClass('active');
+//    });
 });
