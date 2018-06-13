@@ -1,6 +1,5 @@
-# My Website and Blog!!!
+#Caelan's Main Site
 
-Introduction
----
-Website has been created as a programming challenge and will eventually have a PHP powered blog. 
-The website also has several other websites joined to it.
+This is the code for my main page where you can access my projects and potentially my CV
+
+This will be using bootstrap and will be based off of the Bootstrap cover template 
