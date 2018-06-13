@@ -1,4 +1,4 @@
-#Caelan's Main Site
+# Caelan's Main Site
 
 This is the code for my main page where you can access my projects and potentially my CV
 
