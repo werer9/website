@@ -40,6 +40,12 @@ body {
   /**background: url("../img/cover.jpg") no-repeat scroll 0px 100% / cover transparent;**/
 }
 
+/*Navigation*/
+
+#navbar.scrolled {
+    background-color: rgba(0, 0, 0, 0.75);
+    transition: background-color 200ms linear;
+}
 
 .cover-container {
   max-width: 42em;
@@ -103,8 +109,16 @@ body {
 
 
 /*
- * Footer
+ * copyright footer
  */
 .mastfoot {
   color: rgba(255, 255, 255, .5);
+}
+
+/*
+* About section
+*/
+
+#about {
+    background-color: black;
 }

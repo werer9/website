@@ -9,27 +9,26 @@
         <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
         <!--Link to custom CSS-->
         <link href="css/index.css" rel="stylesheet">
-        <title>werer9</title>
+        <title>Caelan Murch</title>
     </head>
-    <body class="text-center">
-        <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
-            <header class="masthead mb-auto">
-                <div class="inner">
-                    <h3 class="masthead-brand">C Murch</h3>
-                    <nav class="nav nav-masthead justify-content-center">
-                        <a class="nav-link active" href="#">Home</a>
-                        <a class="nav-link" href="#">About</a>
-                        <a class="nav-link" href="#">Projects</a>
-                        <a class="nav-link" href="#">Contact</a>
-                    </nav>
-                </div>
-            </header>
-
-            <main role="main" class="inner cover">
+    <body class="text-center flex-column d-block" data-spy="scroll" data-target="#navigation" data-offset="0">
+        <header class="position-fixed masthead mb-auto d-flex w-100 p-3 flex-column" id="navbar">
+            <div class="inner">
+                <h3 class="masthead-brand justify-content-center">Caelan Murch</h3>
+                <nav class="nav nav-masthead justify-content-center float-none" id="navigation">
+                    <a class="nav-link active" href="#home">Home</a>
+                    <a class="nav-link" href="#about">About</a>
+                    <a class="nav-link" href="">Projects</a>
+                    <a class="nav-link" href="">Contact</a>
+                </nav>
+            </div>
+        </header>
+        <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column" id="home">
+            <main role="main" class="inner cover mt-auto">
                 <h1 class="cover-heading">Caelan Murch</h1>
                 <p class="lead">Part 1 Engineering Student at the University of Auckland</p>
                 <p class="lead">
-                    <a href="#" class="btn btn-lg btn-secondary">Learn more</a>
+                    <a href="#about" class="btn btn-lg btn-secondary">Learn more</a>
                 </p>
             </main>
 
@@ -39,8 +38,17 @@
                 </div>
             </footer>
         </div>
+        <!--About section-->
+        <div id="about" class="p-3">
+            <h3 class="text-justify">Hello</h3>
+            <p class="text-justify">Welcome to my page. Here you can find my past projects, CV and further contact details.</p>
+        </div>
         <!-- Bootstrap JavaScript-->
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script
+			  src="https://code.jquery.com/jquery-3.3.1.min.js"
+			  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+			  crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.bundle.min.js" integrity="sha384-u/bQvRA/1bobcXlcEYpsEdFVK/vJs3+T+nXLsBYJthmdBuavHvAW6UsmqO2Gd/F9" crossorigin="anonymous"></script>
+        <script src="js/index.js"></script>
     </body>
 </html>
