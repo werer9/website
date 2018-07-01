@@ -9,9 +9,22 @@ a:hover {
   color: #fff;
 }
 
+/*Paragraphs*/
+p {
+    font-size: 1.1em;
+}
+
+/*List links*/
+
+li a:hover {
+    text-decoration: none;
+    color: skyblue;
+    transition: color 200ms linear;
+}
+
 /* Custom default button */
 .btn-secondary,
-.btn-secondary:hover,
+.btn-secondary:hover
 .btn-secondary:focus {
   color: #333;
   text-shadow: none; /* Prevent inheritance from `body` */
@@ -19,6 +32,14 @@ a:hover {
   border: .05rem solid #77abff;
 }
 
+.btn-secondary:hover {
+    background-color: cadetblue;
+    border-color: cadetblue;
+    color: white;
+    transition: color 250ms linear;
+    transition: border-color 250ms linear;
+    transition: background-color 250ms linear;
+}
 
 /*
  * Base structure
@@ -44,7 +65,7 @@ body {
 
 #navbar.scrolled {
     background-color: rgba(0, 0, 0, 0.75);
-    transition: background-color 200ms linear;
+    transition: background-color 300ms linear;
 }
 
 .cover-container {
@@ -74,6 +95,7 @@ body {
 .nav-masthead .nav-link:hover,
 .nav-masthead .nav-link:focus {
   border-bottom-color: rgba(255, 255, 255, .25);
+  transition: border-bottom-color 200ms linear;
 }
 
 .nav-masthead .nav-link + .nav-link {
@@ -83,6 +105,8 @@ body {
 .nav-masthead .active {
   color: #fff;
   border-bottom-color: #fff;
+  transition: color 200ms linear;
+  transition: border-bottom-color 200ms linear;
 }
 
 @media (min-width: 48em) {

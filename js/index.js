@@ -10,6 +10,6 @@ $(document).ready(function() {
         var link = $(this).attr('href');
         $('html, body').animate({
             scrollTop: $(link).offset().top
-        }, 500);
+        }, 1000);
     });
 });
