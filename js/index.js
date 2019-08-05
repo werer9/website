@@ -1,7 +1,7 @@
 $(document).ready(function() {
     //change navbar colour on scroll
     $(document).scroll(function () {
-	    var $nav = $("#navbar");
+	    var $nav = $("#toggleContent");
 	    $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
 	});
 
