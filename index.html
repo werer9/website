@@ -3,96 +3,88 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <meta name="description" content="Caelan's Personal Homepage">
+        <meta name="description" content="Caelan's Page">
         <meta name="author" content="Caelan Murch">
         <!--Link to bootstrap CSS-->
-        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
-            rel="stylesheet"
-            integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
-            crossorigin="anonymous">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+        		crossorigin="anonymous">
+        <link href="css/all.css" rel="stylesheet">
         <!--Link to custom CSS-->
         <link href="css/index.css" rel="stylesheet">
+        <!--Link to bootstrap JS-->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+                integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+                crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+				integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+                crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+				integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+                crossorigin="anonymous"></script>
+        <!--Link to custom JS-->
+        <script src="js/index.js"></script>
+        <!--Title-->
         <title>Caelan Murch</title>
     </head>
-    <body class="text-center flex-column d-block" data-spy="scroll" data-target="#navigation" data-offset="0">
-        <header class="position-fixed masthead mb-auto d-flex w-100 p-3 flex-column" id="navbar">
-            <div class="inner">
-                <h3 class="masthead-brand justify-content-center">Caelan Murch</h3>
-                <nav class="nav nav-masthead justify-content-center float-none" id="navigation">
-                    <a class="nav-link active" href="#home">Home</a>
-                    <a class="nav-link" href="#about">About</a>
-                    <a class="nav-link" href="#projects">Projects</a>
-                    <a class="nav-link" href="">Contact</a>
-                </nav>
-            </div>
-        </header>
-        <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column" id="home">
-            <main role="main" class="inner cover mt-auto">
-                <h1 class="cover-heading">Caelan Murch</h1>
-                <p class="lead">Part 1 Engineering Student at the University of Auckland</p>
-                <p class="lead">
-                    <a href="#about" class="btn btn-lg btn-secondary">Learn more</a>
+    <!--HTML-Body-->
+    <body data-spy="scroll" data-target="#navigationBar" data-offset="0">
+       	<!--Navbar-->
+       	<nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark"
+                id="navigationBar">
+            <a class="navbar-brand" href="#home">Caelan Murch</a>
+           	<button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#toggleContent" aria-controls="toggleContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+    			<span class="navbar-toggler-icon"></span>
+  			</button>
+   			<div class="collapse navbar-collapse" id="toggleContent">
+				<ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+		  			<li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+		  			<li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+				</ul>
+			</div>
+		</nav>
+		<!--Home view-->
+		<div class="container-fluid min-vh-100 d-flex justify-content-center
+                flex-column" id="home">
+			<div class="m-auto container d-flex flex-column">
+				<h1 class="m-1 text-center font-weight-bold">
+                    Caelan Murch
+                </h1>
+				<h2 class="m-1 text-center font-weight-light">
+                    Computer Systems Engineering Student
+                </h2>
+				<h3 class="m-1 text-center font-weight-light">
+                    The University of Auckland
+                </h3>
+			</div>
+			<div>
+				<p class="text-center">
+                    ©
+                    <script>document.write(new Date().getFullYear());</script>
+                    Caelan Murch
                 </p>
-            </main>
-
-            <footer class="mastfoot mt-auto">
-                <div class="inner">
-                    <p>© 2018 Caelan Murch</p>
-                </div>
-            </footer>
-        </div>
-        <!--About section-->
-        <div id="about" class="p-3 bg-dark shadow">
-            <h3 class="d-inline-block text-justify titles">Hello</h3>
-            <p class="text-justify">Welcome to my page.
-                Here you can find my past projects,
-                CV and further contact details.</p>
-            <div class="d-inline-flex">
-                <div class="px-2 mx-25">
-                    <h4 class="text-justify">Education</h3>
-                    <ul class="text-justify">
-                        <li><a href="http://www.aishk.edu.hk/">
-                            AISHK</a> 2004-2012</li>
-                        <li><a href="https://christscollege.com/">
-                            Christ's College, Canterbury</a> 2013-2017</li>
-                        <li><a href="https://www.auckland.ac.nz/en.html">
-                            University of Auckland</a> 2018-2021</li>
-                    <ul>
-                </div>
-                <div class="px-2 mx-25">
-                    <h4 class="text-justify">Skills</h3>
-                    <ul class="text-justify">
-                        <li>Japanese JLPT N3</li>
-                        <li>HTML/CSS/JS</li>
-                        <li>Swift</li>
-                        <li>Java</li>
-                    <ul>
-                </div>
+			</div>
+		</div>
+		<!--About view-->
+		<div class="container-fluid min-vh-100 d-flex
+                flex-column bg-dark text-light" id="about">
+            <h1 class="text-center mt-5">About</h1>
+		</div>
+        <div class="container-fluid d-flex
+                flex-column bg-primary text-light" id="contact">
+            <h1 class="text-center mt-1">Contact</h1>
+            <div"container mx-auto">
+                <a class="text-decoration-none text-reset"
+                        href="https://github.com/werer9">
+                    <i class="fab fa-github"></i>
+                </a>
             </div>
-        </div>
-        <!--Projects section-->
-        <div id="projects" class="p-3 bg-primary">
-            <h3 class="d-inline-block text-justify titles">Projects</h3>
-            <div id="led" class="inner">
-                <h4 class="p-1">Bluetooth controlled LED</h4>
-                <div class="d-inline-flex">
-                    <img src="https://c.pxhere.com/photos/3c/22/ledtape_ledstrip_led_lamp_magic_color_flexible-1391584.jpg!d"
-                        height="180" width="360">
-                    <p class="text-juestify px-3">
-                        LED strip controlled by Arduino using bluetooth from
-                        smartphone app.
-                    </p>
-                </div>
-            </div>
-        </div>
-        <!-- Bootstrap JavaScript-->
-        <script
-			src="https://code.jquery.com/jquery-3.3.1.min.js"
-			integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-			crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.bundle.min.js"
-            integrity="sha384-u/bQvRA/1bobcXlcEYpsEdFVK/vJs3+T+nXLsBYJthmdBuavHvAW6UsmqO2Gd/F9"
-            crossorigin="anonymous"></script>
-        <script src="js/index.js"></script>
+		</div>
     </body>
 </html>
